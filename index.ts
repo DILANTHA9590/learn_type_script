@@ -192,3 +192,33 @@ function7(userObj2);
 
 
 function7(userObj3);
+
+
+
+//how to work unnkown adn any types
+// we cann asignn unkownveriables all types values
+const myAny1:any = "w"
+const myAny2:any = 2
+const myAny3:any = [1,2,3,5]  
+
+
+//working with  unkown
+// unknown kiyanne type-safe version ekak any type eka wage.
+
+// any widiyata unknown type eka wenasak — unknown value ekak assign karanna puluwan, habai e value eka use karanna (access karanna, call karanna, assign karanna) kalin type check karanna one.
+// unknown type eka TypeScript ekata kiyanne: “Mama danne naha me variable eke type eka mokakda, so eka use karanna ape safety karanna one.”
+// e nisa api nithra type check check karala ape logic eka create kranna oni 
+
+let myUnkown:unknown = 4
+// value.toUpperCase();  // Error! TS error: Object is of type 'unknown'.
+
+// we want to check type before it using 
+
+if (typeof myUnkown === "string") {
+  // now TS knows value is string
+  console.log(myUnkown.toUpperCase());
+} else if (typeof myUnkown === "number") {
+  console.log(myUnkown.toFixed(2));
+} else {
+  console.log("Unknown type");
+}
