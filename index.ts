@@ -8,6 +8,10 @@ let mobilenumber:string="3333"
 let undifineOne: undefined = undefined
 let mynull : null =null
 
-
+//create string arrey
 let Number1:number[]=[1,2,3,4,5,6,7,8,9];
 let string1:string[]=["a","b","c","e","f"];
+
+//create mixed aarrey  with union type
+ let mixedArrey1: (string|number)[] =["dilantha",2]
+  let mixedArrey2: (string|number|boolean|boolean)[] =["dilantha",2,false ,true]
