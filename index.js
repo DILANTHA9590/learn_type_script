@@ -14,7 +14,7 @@ let Number1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let string1 = ["a", "b", "c", "e", "f"];
 //create mixed aarrey  with union type
 let mixedArrey1 = ["dilantha", 2];
-let mixedArrey2 = ["dilantha", 2, false, true];
+let mixedArrey2 = ["dilantha", 2, 3, false, true];
 //create t2d arrey
 const arrey = [
     [1, 2, 3], [1, 2, 3]
@@ -77,9 +77,75 @@ let userObj2 = {
     age: 23
 };
 let userObj3 = {
-    name: "dilantha",
+    name: "dilantha nayanajith npx tsc",
     age: 23
 };
 function7(userObj2);
 function7(userObj3);
+//how to work unnkown adn any types
+// we cann asignn unkownveriables all types values
+const myAny1 = "w";
+const myAny2 = 2;
+const myAny3 = [1, 2, 3, 5];
+//working with  unkown
+// unknown kiyanne type-safe version ekak any type eka wage.
+// any widiyata unknown type eka wenasak — unknown value ekak assign karanna puluwan, habai e value eka use karanna (access karanna, call karanna, assign karanna) kalin type check karanna one.
+// unknown type eka TypeScript ekata kiyanne: “Mama danne naha me variable eke type eka mokakda, so eka use karanna ape safety karanna one.”
+// e nisa api nithra type check check karala ape logic eka create kranna oni 
+let myUnkown = 4;
+// value.toUpperCase();  // Error! TS error: Object is of type 'unknown'.
+// we want to check type before it using 
+if (typeof myUnkown === "string") {
+    // now TS knows value is string
+    console.log(myUnkown.toUpperCase());
+}
+else if (typeof myUnkown === "number") {
+    console.log(myUnkown.toFixed(2));
+}
+else {
+    console.log("Unknown type");
+}
+let name1 = "dilantha";
+// now we can assin number or string 
+let name2 = 2;
+const data1 = {
+    name: "dilantha",
+    age: 12,
+    city: "ampra"
+};
+//  data1.age = 12 we cant assin new data now. why now it readonly  readonly obj property we cant change
+// optinal
+let obje4 = {
+    name: "dilantha",
+    age: 32,
+};
+// literals types ---------------------------------------->
+// mekedi apita kiyanna puluvan me veriables walata me values 
+// witharai assign kranna  puluvn kiyala  e vagema apata union type use karala   apita  mutiple values denna pulubvan
+let direction = "north";
+direction = "west";
+direction = "kjkl";
+let direction2 = "North";
+direction2 = "North";
+function myArrey(val) {
+    let typeNumber = [];
+    let typeString = [];
+    for (const item of val) {
+        console.log(item);
+        let data = item;
+        if (typeof item === "number") {
+            typeNumber.push(item);
+        }
+        else if (typeof item === "string") {
+            typeString.push(item);
+        }
+        else {
+            continue;
+        }
+    }
+    console.log("myArraynumber", typeNumber);
+    console.log("myArrayString", typeString);
+}
+let myArrey1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "dilantha", false];
+myArrey(myArrey1);
 //# sourceMappingURL=index.js.map
