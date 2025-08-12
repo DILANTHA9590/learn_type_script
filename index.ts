@@ -390,4 +390,31 @@ else{
 
 
 
-testOne()
+// Intersection type ----------------------------------------------------------->
+// දෙකකට හෝ ඊට වඩා වර්ග (types) එකට එක් කරලා ඒවායේ සෙසු සියලු properties එකටම එකතු කරන එක.
+// ඔයාට තියෙනවා TypeA එකක්, TypeB එකක්.
+
+// ඔයාට අවශ්‍යයි දෙකම එකට combine කරලා එක new type එකක් සාදන්න.
+
+// එහෙම new type එකට TypeA වල properties එකතු වෙනවා,
+// එකට අමතරව TypeB වල propertiesත් එකතු වෙනවා.
+
+type Person = {
+  name: string;
+  age: number;
+}
+
+type Employee = {
+  employeeId: number;
+  department: string;
+}
+
+// Intersection type: Person සහ Employee දෙකම එක්කොට
+type EmployeeDetails = Person & Employee;
+
+const emp1: EmployeeDetails = {
+  name: "Dilantha",
+  age: 24,
+  employeeId: 101,
+  department: "IT"
+}
