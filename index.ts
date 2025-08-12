@@ -418,3 +418,52 @@ const emp1: EmployeeDetails = {
   employeeId: 101,
   department: "IT"
 }
+
+
+
+// interfaces  and  extend ------------------------------------------------------------------------------------------------------->
+// Interface කියන්නේ මොකද්ද?
+// Interface කියන්නේ object එකක structure එක define කරන්න TypeScript එකෙන් use කරන tool එකක්.
+
+// ඒකෙන් කියන්නේ “මෙම object එකෙ මේ properties (fields) තියෙන්න ඕනෙ, ඒවගේම ඒවගේ type තියෙන්න ඕනෙ” කියලා කියන එක.
+
+// Extend කියන්නේ මොකද්ද?
+// එක් interface එකක් අනික් interface එකක තිබෙන properties මැදිහත් කරගන්න කියන concept එක.
+
+// මෙහෙම කරද්දි ඔයාට එක interface එක තුලින්, තවත් interface එකක සියලු properties ලැබෙනවා.
+
+// ඒකෙන් code එක re-use කරන්න, organized වෙන්න, සහ DRY principle (Don’t Repeat Yourself) පරිපාලනය කරන්න හොඳයි.
+
+
+
+// // base interface - Person
+// interface Person {
+//   name: string;
+//   age: number;
+// }
+
+// // Employee කියන්නේ Person එක extend කරන interface එකක්
+// interface Employee extends Person {
+//   employeeId: number;
+//   department: string;
+// }
+
+// // object එකක් Employee type එකට අනුව සාදමු
+// const emp1: Employee = {
+//   name: "Dilantha",
+//   age: 24,
+//   employeeId: 101,
+//   department: "IT"
+// };
+
+// // function එකක් employee object එක print කරන
+// function printEmployee(emp: Employee) {
+//   console.log(`Name: ${emp.name}`);
+//   console.log(`Age: ${emp.age}`);
+//   console.log(`Employee ID: ${emp.employeeId}`);
+//   console.log(`Department: ${emp.department}`);
+// }
+
+// // function call කරමු
+// printEmployee(emp1);
+// // 
