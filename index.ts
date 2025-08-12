@@ -45,3 +45,32 @@ let user1: {name:string ,age:number, city:string} ={ //set types for alll keys
     city :"ampara"
 
 }
+
+
+
+// working with object  duplicate type
+//we can create for it custom type
+
+
+type  User ={ //create custom type
+    name:string,
+    age:number,
+    city:string
+}
+let user2: User ={ //set types for alll keys
+
+    name: "dilantha",
+    age : 34,
+    city :"ampara"
+
+}
+
+
+let user3: User ={ //set types for alll keys
+
+    name: "dilantha",
+    age : 34,
+    city :"ampara"
+
+}
+
