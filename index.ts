@@ -240,9 +240,37 @@ let name1:Myname = "dilantha";
 // now we can assin number or string 
  let name2:Myname2= 2
 
-// Learned how to use 'readonly' in TypeScript to prevent modification of object properties 
+// Learned how to use 'readonly' and 'optional' in TypeScript to prevent modification of object properties ---------------------------->
  //readonly use karam apita modify karann ba
 
+ type dataTypes ={
+
+    name :string,
+  readonly  age : number,
+    city? : string, //methana  optional dan dila thiyenne ethakota apita  object eke  e value eka anivarya na
+    // me propety  eka use kre na kiyala compile err ekk enne na
+ }
+
+
+ const data1:dataTypes={
+
+    name :"dilantha",
+    age  : 12,
+ city  :"ampra"
+
+
+ }
+
+
+//  data1.age = 12 we cant assin new data now. why now it readonly  readonly obj property we cant change
+// optinal
+
+let obje4:dataTypes={
+    name:"dilantha",
+    age:32,
+    
+
+}
 
 
 
