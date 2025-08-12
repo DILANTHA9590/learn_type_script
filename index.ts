@@ -222,3 +222,8 @@ if (typeof myUnkown === "string") {
 } else {
   console.log("Unknown type");
 }
+
+// apit ameka  tyupe assertions  ekk dennath puluvn 
+// ethakota eyae dena type ekata anuva wada karagena yanava 
+
+(myUnkown as string).toUpperCase()
