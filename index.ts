@@ -15,3 +15,12 @@ let string1:string[]=["a","b","c","e","f"];
 //create mixed aarrey  with union type
  let mixedArrey1: (string|number)[] =["dilantha",2]
   let mixedArrey2: (string|number|boolean|boolean)[] =["dilantha",2,false ,true]
+
+  //create t2d arrey
+
+
+  const arrey:number[][] =[
+
+    [1,2,3],[1,2,3]
+
+  ]
