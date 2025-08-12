@@ -8,3 +8,6 @@ let mobilenumber:string="3333"
 let undifineOne: undefined = undefined
 let mynull : null =null
 
+
+let Number1:number[]=[1,2,3,4,5,6,7,8,9];
+let string1:string[]=["a","b","c","e","f"];
