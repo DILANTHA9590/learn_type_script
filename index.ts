@@ -32,3 +32,16 @@ let string1:string[]=["a","b","c","e","f"];
   let fixedArrey2:[string,number]= ["car", 23];
 
   let fixedArrey3:[string,number,number]=["car",32,32];
+
+
+
+  //Objects
+
+
+let user1: {name:string ,age:number, city:string} ={ //set types for alll keys
+
+    name: "dilantha",
+    age : 34,
+    city :"ampara"
+
+}
