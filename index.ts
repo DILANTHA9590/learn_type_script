@@ -24,3 +24,11 @@ let string1:string[]=["a","b","c","e","f"];
     [1,2,3],[1,2,3]
 
   ]
+
+
+  //fixed lenght  arrey 
+  let fixedArrey1:[string,string]= ["car","bike"];
+
+  let fixedArrey2:[string,number]= ["car", 23];
+
+  let fixedArrey3:[string,number,number]=["car",32,32];
