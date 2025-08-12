@@ -14,7 +14,7 @@ let string1:string[]=["a","b","c","e","f"];
 
 //create mixed aarrey  with union type
  let mixedArrey1: (string|number)[] =["dilantha",2]
-  let mixedArrey2: (string|number|boolean|boolean)[] =["dilantha",2,false ,true]
+  let mixedArrey2: (string|number|boolean|boolean)[] =["dilantha",2,3,false ,true]
 
   //create t2d arrey
 
@@ -299,4 +299,53 @@ let direction2:Direction= "North"
 direction2="North"
 // "North"|"East"|"West"|"South"me value tikath assign kranna puluvan mevagen pita values assign karoth err!
 
+
+
+// type narrow  
+//mekedi function eke veraible ekata union use krala type narrowing  karanna puluvan 
+// ekede tpe of usekrala union  type  eka anuva narow krann ap[uluvan]
+//
+// i created small function  for type naarowing and union and types using 
+
+type myArreyTypse = number|string|boolean
+
+function myArrey (val:(myArreyTypse)[]): void{
+let typeNumber:number[]=[];
+let typeString:string[]=[];
+
+
+    
+    for(const item of val){
+
+
+        console.log(item);
+
+        let data = item
+
+    if(typeof item==="number"){
+        typeNumber.push(item)
+    }
+
+    else if(typeof item ==="string"){
+        typeString.push(item)
+    }
+
+
+    else{
+        continue
+    }
+
+    }
+
+
+
+console.log("myArraynumber",typeNumber)
+
+console.log("myArrayString",typeString)
+}
+
+let myArrey1:(myArreyTypse)[]=[1,2,3,4,5,6,7,8,9,0,"dilantha",false];
+
+
+myArrey(myArrey1);
 
