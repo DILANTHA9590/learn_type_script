@@ -349,3 +349,45 @@ let myArrey1:(myArreyTypse)[]=[1,2,3,4,5,6,7,8,9,0,"dilantha",false];
 
 myArrey(myArrey1);
 
+// Discriminating type-------------------------------------------------------------------------> 
+
+// Discriminated union කියන්නේ,
+// එක type union එකක අලුත් types හඳුනාගන්න “tag” වගේ unique property එකක් use කිරීම.
+
+// ඒකෙන් TypeScript (හෝ JavaScript) compiler එකට type narrowing කරන්න ලේසි වෙයි.
+
+// මේකෙන් if/else, switch statement වලින් clear code ලියන්න පුළුවන්.
+
+
+type circle ={
+
+    type: "circle",
+    radius:number
+
+}
+
+type squre ={
+    type: "square"
+    width:number,
+    height:number
+}
+
+
+type shape = circle|squre
+
+function  testOne(val:shape){
+
+if(val.type ==="square"){
+console.log(val.height);
+
+}
+else{
+ console.log(val.radius);
+}
+
+
+}
+
+
+
+testOne()
