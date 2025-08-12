@@ -226,7 +226,7 @@ if (typeof myUnkown === "string") {
 // apit ameka  tyupe assertions  ekk dennath puluvn 
 // ethakota eyae dena type ekata anuva wada karagena yanava 
 
-(myUnkown as string).toUpperCase()
+// (myUnkown as string).toUpperCase()
 
 
 // deap dive to custom types --------------------------------------------------------->
@@ -272,5 +272,31 @@ let obje4:dataTypes={
 
 }
 
+
+
+
+
+// literals types ---------------------------------------->
+// mekedi apita kiyanna puluvan me veriables walata me values 
+// witharai assign kranna  puluvn kiyala  e vagema apata union type use karala   apita  mutiple values denna pulubvan
+let  direction: string ="north";
+direction="west"
+direction ="kjkl"
+// dan   me vage random string ekk nathuve me veraible ekkata assign kranna oni  north ,west east  , south yana value withrak nam
+// apita literl type use rkann apuluvn   methandi string assign nokara   kelinma api nordth kiaya value eka denava 
+//e avge,ma api union use krala me veriable ekata me value tika withrak  assign kranna hadnana puluvan( north ,west east  , south)
+
+ 
+
+
+// let direction2: "North"|"East"|"West"|"South" = "North" //defalut sounth assig krala thiyenava apita 
+// mehama nodi directin apita tupe use krannathpuluvan
+
+type Direction =  "North"|"East"|"West"|"South" 
+
+let direction2:Direction= "North"
+
+direction2="North"
+// "North"|"East"|"West"|"South"me value tikath assign kranna puluvan mevagen pita values assign karoth err!
 
 
