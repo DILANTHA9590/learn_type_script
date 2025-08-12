@@ -148,4 +148,13 @@ function myArrey(val) {
 }
 let myArrey1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "dilantha", false];
 myArrey(myArrey1);
+function testOne(val) {
+    if (val.type === "square") {
+        console.log(val.height);
+    }
+    else {
+        console.log(val.radius);
+    }
+}
+testOne;
 //# sourceMappingURL=index.js.map
