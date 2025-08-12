@@ -227,3 +227,22 @@ if (typeof myUnkown === "string") {
 // ethakota eyae dena type ekata anuva wada karagena yanava 
 
 (myUnkown as string).toUpperCase()
+
+
+// deap dive to custom types --------------------------------------------------------->
+type Myname = string
+
+
+
+type Myname2 = string|number
+let name1:Myname = "dilantha";
+
+// now we can assin number or string 
+ let name2:Myname2= 2
+
+// Learned how to use 'readonly' in TypeScript to prevent modification of object properties 
+ //readonly use karam apita modify karann ba
+
+
+
+
